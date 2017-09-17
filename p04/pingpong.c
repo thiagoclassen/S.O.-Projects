@@ -162,8 +162,6 @@ int task_create (task_t *task, void (*start_func)(void *), void *arg) {
 // Termina a tarefa corrente, indicando um valor de status encerramento
 void task_exit (int exitCode) {
 
-    task_t aux = *current_task;
-    
     #ifdef DEBUG
 	//printf("\ntask_exit: Terminando tarefa  %d.\n", current_task->tid);
 	#endif
